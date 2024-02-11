@@ -1,0 +1,173 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face{
+    font-family: 'Unie Neue';
+    src: url('fontes/UniNeue-Trial-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --fonte-destaque: 'Unie Neue', Arial, Verdana, Helvetica, sans-serif;
+    --fonte-padrao: 'Roboto', sans-serif;
+    --cor-destaque: #5165bc;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color:#1E2021;
+    color: #F2F2F2;
+}
+
+body.dark-mode ul {
+    color: #F2F2F2; 
+}
+
+
+header{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgba(81, 101, 188, 0.98);
+    height: 50px;
+    display: flex;
+}
+
+header > h1{
+    color: white;
+    font-family: var(--fonte-destaque);
+}
+
+
+nav{
+    display: flex;
+    margin-left: auto;
+}
+
+nav > a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: var(--fonte-destaque);
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+
+nav > a:hover{
+    color: black;
+}
+
+
+
+main{
+    min-width: 300px;
+    max-width: 720px;
+    margin: auto;
+}
+
+article > h1{
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main p{
+    margin: 15px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-family: var(--fonte-padrao);
+}
+
+main strong{
+    font-weight: bolder;
+}
+
+main a{
+    color:#5165bc;
+    font-weight: bold;
+}
+
+h2{
+    font-family: var(--fonte-destaque);
+    color: #4253A0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+main li{
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
+#video{
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 57%;
+}
+
+#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+
+figcaption{
+    text-align: center;
+    font-weight: bold;
+}
+
+ul{
+    margin-left: 10px;
+}
+
+/*Não soube mudar a cor da bolinha sem ter que modificar individuamente a cor do conteudo, e no modo escuro acaba não trocando de cor*/
+
+main img{
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#modo_escuro{
+    height: 30px;
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#modo_escuro:hover{
+    height: 32px;
+}
